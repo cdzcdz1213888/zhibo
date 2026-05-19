@@ -141,6 +141,25 @@
     <p>智能分析观众弹幕，生成温柔自然的回复话术</p>
   </div>
 
+  <!-- ══ 登录前下载区块 ══ -->
+  <div class="card" id="pre-login-download">
+    <div class="download-section">
+      <h3>📥 下载灵聊AI App</h3>
+      <div class="download-grid">
+        <div class="download-item" onclick="window.open('https://github.com/lingliaoai/lingliaoai.apk/raw/main/app-debug(6).apk')">
+          <div class="dl-icon">🤖</div>
+          <h4>安卓 · 下载APK</h4>
+          <p>文字版 + 识图版合一</p>
+        </div>
+        <div class="download-item" onclick="showIphoneGuide()">
+          <div class="dl-icon">🍎</div>
+          <h4>iPhone · 添加桌面</h4>
+          <p>无需下载，一步添加</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ══ 登录/注册卡片 ══ -->
   <div class="card" id="auth-card">
     <div class="auth-wrap">
@@ -277,6 +296,26 @@
       </div>
 
     </div>
+
+    <!-- ══ 登录后常驻下载区块 ══ -->
+    <div class="card">
+      <div class="download-section">
+        <h3>📥 下载 App 随时使用</h3>
+        <div class="download-grid">
+          <div class="download-item" onclick="window.open('https://github.com/lingliaoai/lingliaoai.apk/raw/main/app-debug(6).apk')">
+            <div class="dl-icon">🤖</div>
+            <h4>安卓 · 下载APK</h4>
+            <p>文字版 + 识图版合一</p>
+          </div>
+          <div class="download-item" onclick="showIphoneGuide()">
+            <div class="dl-icon">🍎</div>
+            <h4>iPhone · 添加桌面</h4>
+            <p>无需下载，一步添加</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -307,8 +346,8 @@ const DEEPSEEK_KEY = 'sk-23653a77c0a9456fb12a8c2525214c30';
 const ALIYUN_KEY   = 'sk-3912e93215e74b03870d2bb45c711070';
 
 // APK 下载链接（上传APK后替换这里）
-const APK_TEXT_URL   = '#'; // 文字版APK链接
-const APK_VISION_URL = '#'; // 识图版APK链接
+const APK_TEXT_URL   = 'https://github.com/lingliaoai/lingliaoai.apk/raw/main/app-debug(6).apk';
+const APK_VISION_URL = 'https://github.com/lingliaoai/lingliaoai.apk/raw/main/app-debug(6).apk';
 
 let currentUser = null;
 let userProfile = null;
